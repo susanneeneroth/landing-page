@@ -152,13 +152,17 @@
     <section class="contact-section">
         <div class="contact-section_box">
             <h2 class="contact-heading">Contact Us</h2>
-            <form>
-                <p class="contact-text">Fullname</p>
-                <input type="text" name="" id="">
-                <p class="contact-text">Your Email address</p>
-                <input type="text" name="" id="">
-                <p class="contact-text">Your message</p>
-                <input type="textarea" name="" id="">
+            <form class="contact-form">
+                <label class="contact-text" class="contact-form-name">Full Name</label>
+                <input required type="text" name="full_name" id="full_name" class="form-textinput"
+                    placeholder="Ram Kaji" minlength="2" maxlength="12">
+                <label class="contact-text">Your Email address</label>
+                <input required type="email" name="email" id="email" class="form-textinput"
+                    placeholder="hello@lastdoor.store"
+                    pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$">
+                <label class="contact-text">Your message</label>
+                <input required type="textarea" name="message" id="message" class="form-textinput__textarea"
+                    placeholder="Type your message here">
             </form>
             <button class="contact-form-button">Submit Your Message</button>
         </div>
@@ -168,7 +172,7 @@
     <footer class="section-footer">
         <p>Copyright © 2018 LastDoor.Store</p>
     </footer>
-    
+
 </body>
 
 </html>
