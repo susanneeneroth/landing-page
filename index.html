@@ -13,7 +13,7 @@
 
 <body>
     <header class="header">
-        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></div></a></div>
+        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
         <nav class="navigation">
             <ul>
                 <li class="navigation__item"><a href="#">Services</a></li>
@@ -92,9 +92,11 @@
                 towards their goals.</p>
         </div>
         <div class="fourth-section__right">
-            <h3 class="heading-small">Robust Agency</h3>
-            <h1 class="main-heading">About Us</h1>
-            <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis nisl
+            <div class="headings">
+                <h3 class="heading-small">Robust Agency</h3>
+                <h1 class="main-heading">About Us</h1>
+            </div>
+            <p class="paragraph-text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis nisl
                 vulputate justo consequat tempor. Nam
                 gravida sed ipsum in pellentesque. Cras pellentesque placerat cursus. Ut ultrices ultricies finibus.
                 Donec rutrum felis convallis, efficitur tellus sit amet, tristique
@@ -106,15 +108,15 @@
         </div>
     </section>
 
-    <!-- section customer logotypes -->
-    <section class="customer-logotypes">
+    <!-- customer logotypes -->
+    <div class="customer-logotypes">
         <div class="customer-logotypes-item"><img src="images/logo-hello-fresh.png" alt="logo-hello-fresh"></div>
         <div class="customer-logotypes-item"><img src="images/logo-trivago.png" alt="logo-trivago"></div>
         <div class="customer-logotypes-item"><img src="images/logo-los-angelese-times.png"
                 alt="logo-los-angelese-times"></div>
         <div class="customer-logotypes-item"><img src="images/logo-oracle.png" alt="logo-oracle"></div>
         <div class="customer-logotypes-item"><img src="images/logo-target.png" alt="logo-target"></div>
-    </section>
+    </div>
 
     <hr class="divider-line">
 
@@ -148,12 +150,12 @@
         </div>
     </section>
 
-    <!-- contact section -->
+    <!-- contact section form -->
     <section class="contact-section">
         <div class="contact-section_box">
             <h2 class="contact-heading">Contact Us</h2>
-            <form class="contact-form">
-                <label class="contact-text" class="contact-form-name">Full Name</label>
+            <form method="POST" class="contact-form">
+                <label class="contact-text contact-form-name">Full Name</label>
                 <input required type="text" name="full_name" id="full_name" class="form-textinput"
                     placeholder="Ram Kaji" minlength="2" maxlength="12">
                 <label class="contact-text">Your Email address</label>
@@ -161,10 +163,9 @@
                     placeholder="hello@lastdoor.store"
                     pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$">
                 <label class="contact-text">Your message</label>
-                <input required type="textarea" name="message" id="message" class="form-textinput__textarea"
-                    placeholder="Type your message here">
+                <textarea name="message" id="message" class="form-textinput__textarea">Type your message here</textarea>
+                <button class="contact-form-button" type="submit">Submit Your Message</button>
             </form>
-            <button class="contact-form-button">Submit Your Message</button>
         </div>
     </section>
 
